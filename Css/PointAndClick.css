@@ -24,6 +24,7 @@ body {
     background-color: #000000;
     top: 10px;
     left: 10px;
+    color:white;
 }
 
 #dialogBar {
@@ -34,41 +35,70 @@ body {
     position: relative;
     width: 800px;
     height: 64px;
-    background-color: #FFFFFF;
+    background-color: #442c1c;
 }
 
 #heroAvatar {
-    width: 32px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     background-color: #fe9400;
+    bottom: 0px;
+    left: 0px;
 }
 
 #heroSpeech {
     width: 300px;
-    background-color: #FFFFFF;
+    background-color: #0400ff;
 }
 
 #counterSpeech {
     width: 300px;
-    background-color: #FFFFFF;
+    background-color: #00ff04;
 }
 
 #counterAvatar {
-    width: 32px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     background-color: #FF0000;
+    bottom: 0px;
+    right: 0px;
 }
 
 #squareTree {
     width: 64px;
     height: 64px;
     background-color: #00ff00;
+    left: 400px;
+    top: 150px;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+#door {
+    width: 32px;
+    height: 64px;
+    background-color: #6e4400;
+    left: 200px;
+    top: 350px;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+#key {
+    width: 32px;
+    height: 32px;
+    background-color: #e7ff0a;
+    left: 620px;
+    top: 70px;
+    opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 #hero {
     width: 32px;
     height: 32px;
     background-color: #fe00cb;
+    transition: all 1s ease-in-out;
 }
 
 #tileMap {}
