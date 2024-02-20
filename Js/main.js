@@ -55,6 +55,9 @@ gameWindow.onclick = function (e)
         case "well" :
             getItem("Coin", "coin");
              break;
+        
+        case "statue" :
+            console.log("Hey you the key is on the platform on the roof of the building")
 
         default:
             door1.style.opacity = 1;

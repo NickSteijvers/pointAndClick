@@ -39,9 +39,9 @@ body {
 }
 
 #heroAvatar {
-    width: 100px;
-    height: 100px;
-    background-color: #fe9400;
+    width: 72px;
+    height: 68px;
+    /*background-color: #fe9400;*/
     bottom: 0px;
     left: 0px;
 }
@@ -67,7 +67,7 @@ body {
 #rustyKeyDoor {
     width: 32px;
     height: 64px;
-    background-color: #6e4400;
+    /*background-color: #6e4400;*/
     left: 464px;
     top: 353px;
     opacity: 1;
@@ -77,9 +77,9 @@ body {
 #key {
     width: 32px;
     height: 32px;
-    background-color: #e7ff0a;
-    left: 620px;
-    top: 70px;
+    /*background-color: #e7ff0a;*/
+    left: 543px;
+    top: 192px;
     opacity: 1;
     transition: all 1s ease-in-out;
 }
@@ -88,15 +88,24 @@ body {
 {
     width: 64px;
     height: 64px;
-    background-color: #FF0000;
+    /*background-color: #FF0000;*/
     left: 5px;
     top: 353px;
 
 }
 
+#statue
+{
+    width: 32px;
+    height: 64px;
+    /*background-color: #FF0000;*/
+    left: 32px;
+    top: 223px;
+}
+
 #hero {
-    top: 0px;
-    left: 0px;
+    top: 390px;
+    left: 287px;
     width: 32px;
     height: 32px;
     transition: all 1s ease-in-out;
