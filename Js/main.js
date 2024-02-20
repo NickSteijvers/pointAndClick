@@ -79,14 +79,21 @@ gameWindow.onclick = function (e)
 
         //Removing visible items:
         //document.getElementById("key").remove();
-
     }
+
     //UseItem
     function useItem (itemName, itemId)
     {
 
     }
+
+
     //CheckItem
+    /**
+     * This returns string value if it exists in the array
+     * @param {string} itemName 
+     * @returns 
+     */
     function checkItem(itemName)
     {
         return inventory.includes(itemName);
@@ -106,15 +113,14 @@ gameWindow.onclick = function (e)
         keyelement.id = itemId;
         keyelement.innerText = itemName;
         inventorylist.appendChild(keyelement)
-
     }
 
+      //RemoveItem
     /**
      * Removes item from array and the element within the HTML
      * @param {string} itemName 
      * @param {string} itemId 
      */
-    //RemoveItem
     function removeItem (itemName, itemId)
     {
         //remove item in array
