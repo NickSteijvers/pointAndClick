@@ -24,18 +24,20 @@
         <!--dialog bar-->
         <div id="dialogBar" class="foreground">
             <div id="setMainDialog">
+                
                 <div id="heroAvatar" class="foreground">
                     <img src="img/portairt.png" alt="heroAvatar">
                 </div>
-                <div id="heroSpeech" class="foreground">
-
+                <div id="heroSpeech" class="foreground speechBubble">
+                    Hello
                 </div>
-                <div id="counterSpeech" class="foreground">
-
+                <div id="counterSpeech" class="foreground speechBubble">
+                    Hi
                 </div>
                 <div id="counterAvatar" class="foreground">
-
+                    <img src = "img/portairStatue.png" alt = "counter avatar">
                 </div>
+                <div id = "brownBar" class = "background"></div>
             </div>
         </div>
         <!--Foreground elements-->
@@ -59,6 +61,15 @@
         </div>
 
     </div>
+
+    <audio id = "heroAudio">
+        <source src = "Audio/Gibberish - Sound Effect_01.mp3">
+    </audio>
+
+    <audio id = "counterAudio">
+        <source src = "Audio/high pitch voice.mp3">
+    </audio>
+
 </body>
 
 </html>

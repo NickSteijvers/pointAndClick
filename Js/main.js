@@ -24,11 +24,11 @@ let gameState =
 //Comment out runGame(); if you want to use the save file function
 runGame();
 function runGame() {
-    debugger;
 
 
     //Game window refrence
     const gameWindow = document.getElementById("gameWindow");
+    const sec = 1000;
 
     //inventory
     const inventorylist = document.getElementById("inventorylist")
@@ -36,6 +36,11 @@ function runGame() {
     //Main Character
     const mainCharacter = document.getElementById("hero");
     const offsetcharacter = 16;
+    //speech bubbles
+    const heroSpeech = document.getElementById("heroSpeech");
+    const counterSpeech = document.getElementById("counterSpeech");
+
+
 
     const door1 = document.getElementById("rustyKeyDoor");
     const key1 = document.getElementById("key");
@@ -63,20 +68,21 @@ function runGame() {
             case "rustyKeyDoor":
                 if (checkItem("key")) {
                     door1.style.opacity = 0.5;
-                    console.log("I opened the door. Yeah!");
+                    showMessage(heroSpeech, "I opened the door. Yeah!")
                 }
                 else if (checkItem("coin")) {
                     changeInventory("coin", "remove")
-                    console.log("O no I lost my coin and it didnt open the door... I feel kinda stupid");
+                    showMessage(heroSpeech, "O no I lost my coin and it didnt open the door... I feel kinda stupid")
                 }
 
                 else {
-                    console.log("Fuck the door is locked and i dont have the key")
+                    showMessage(heroSpeech, "Fuck the door is locked and i dont have the key")
                 }
                 break;
 
             case "well":
                 if (gameState.coinPickedUp == false) {
+                    showMessage(heroSpeech, "I found a coin :)")
                     console.log("pickup coin");
                     changeInventory('coin', "add");
                     gameState.coinPickedUp = true;
@@ -87,7 +93,7 @@ function runGame() {
                 break;
 
             case "statue":
-                console.log("Hey you the key is on the platform on the roof of the building")
+                showMessage(counterSpeech, "Hey you the key is on the platform on the roof of the building")
 
             default:
                 door1.style.opacity = 1;
@@ -142,4 +148,22 @@ function runGame() {
             inventorylist.appendChild(inventoryItem)
         })
     }
+
+    /**
+     * It will show dialogue
+     * @param {getElementById} targetBubble 
+     * @param {string} message 
+     */
+    function showMessage(targetBubble, message)
+    {
+        targetBubble.innerText = message;
+        targetBubble.style.opacity = 1;
+        setTimeout(hideMessage, 4 * sec, targetBubble);
+    }
+    function hideMessage(targetBubble)
+    {
+        targetBubble.innerText = "...";
+        targetBubble.style.opacity = 0;
+    }
+
 }
