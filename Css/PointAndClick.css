@@ -141,6 +141,7 @@ body {
 .foreground {
     position: absolute;
     z-index: 1000;
+    transition: all 1s ease-in-out;
 }
 
 .speechBubble{
