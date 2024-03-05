@@ -7,6 +7,7 @@ body {
 #title {
     grid-column-start: 2;
     grid-row-start: 1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #gameWindow {
@@ -21,10 +22,12 @@ body {
 #inventoryBox {
     width: 180px;
     height: 80px;
-    background-color: #000000;
+    background: rgba(0, 0, 0, .6) ;
+    border-radius: 10px;
     top: 10px;
     left: 10px;
-    color:white;
+    color: #00C6D6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #dialogBar {
@@ -48,18 +51,22 @@ body {
 
 #heroSpeech {
     width: 300px;
-    background-color: #0400ff;
+    background-color: #7EB8AF;
     top: 0px;
     left: 72px;
     opacity: 0;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #counterSpeech {
     width: 300px;
-    background-color: #00ff04;
+    background-color: #259B69;
     top: 0px;
     right: 72px;
     opacity: 0;
+    color:black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #counterAvatar {
@@ -71,6 +78,11 @@ body {
     opacity: 0;
 }
 
+#bigBoyBob {
+    width: 68px;
+    height: 68px;
+}
+
 #brownBar
 {
     bottom: 0px;
@@ -79,54 +91,122 @@ body {
     background-color: #442c1c;
 }
 
-#rustyKeyDoor {
-    width: 32px;
+#phone {
+    width: 40px;
     height: 64px;
     /*background-color: #6e4400;*/
-    left: 464px;
-    top: 353px;
+    right: 44px;
+    top: 403px;
     opacity: 1;
     transition: all 1s ease-in-out;
 }
 
-#key {
+#note {
     width: 32px;
     height: 32px;
     /*background-color: #e7ff0a;*/
-    left: 543px;
-    top: 192px;
+    left: 95px;
+    top: 390px;
     opacity: 1;
     transition: all 1s ease-in-out;
 }
 
-#well
+#coin
+{
+    width: 32px;
+    height: 32px;
+    /*background-color: #FF0000;*/
+    left: 30px;
+    top: 205px;
+
+}
+
+#globe
+{
+    width: 32px;
+    height: 42px;
+    /*background-color: #0022fe;*/
+    left: 190px;
+    top: 130px;
+}
+
+#fruit
+{
+    width: 32px;
+    height: 42px;
+    /*background-color: #0022fe;*/
+    right: 255px;
+    top: 490px;
+}
+
+#painting
+{
+    width: 52px;
+    height: 32px;
+    /*background-color: #0022fe;*/
+    right: 295px;
+    top: 370px;
+}
+
+#locker
 {
     width: 64px;
     height: 64px;
-    /*background-color: #FF0000;*/
-    left: 5px;
-    top: 353px;
-
+    /*background-color: #0022fe;*/
+    left: 255px;
+    top: 126px;
 }
 
-#statue
+#table1
 {
     width: 32px;
-    height: 64px;
+    height: 32px;
+    /*background-color: #0022fe;*/
+    left: 160px;
+    top: 386px;
+}
+
+#table2
+{
+    width: 32px;
+    height: 32px;
+    /*background-color: #0022fe;*/
+    left: 95px;
+    top: 516px;
+}
+
+#table3
+{
+    width: 32px;
+    height: 32px;
+    /*background-color: #0022fe;*/
+    left: 225px;
+    top: 266px;
+}
+
+#bob
+{
+    width: 32px;
+    height: 44px;
     /*background-color: #FF0000;*/
-    left: 32px;
-    top: 223px;
+    right: 20px;
+    top: 140px;
 }
 
 #hero {
-    top: 390px;
-    left: 287px;
+    top: 120px;
+    left: 340px;
     width: 32px;
     height: 32px;
     transition: all 1s ease-in-out;
 }
 
-#tileMap {}
+#heroImage
+{
+    width: 50px;
+    height: 50px;
+}
+
 
 .background {
     position: absolute;
