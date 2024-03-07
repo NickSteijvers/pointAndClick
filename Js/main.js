@@ -138,10 +138,8 @@ gameWindow.onclick = function (e) {
                 setTimeout(function () { counterAvatar.style.opacity = 1; }, 4 * sec);
                 setTimeout(showMessage, 4 * sec, counterSpeech, "Hey whats the problem?", counterAudio);
                 setTimeout(showMessage, 8 * sec, heroSpeech, "I left my phone here after yesterdays lesson", heroAudio);
-                setTimeout(showMessage, 12 * sec, counterSpeech, "Then you should look at your table if it is still there", counterAudio);
-                setTimeout(showMessage, 16 * sec, heroSpeech, "I forgot which table was mine", heroAudio)
-                setTimeout(showMessage, 20 * sec, counterSpeech, "Then you search every table till you find it", counterAudio);
-                setTimeout(showMessage, 24 * sec, heroSpeech, "Thanks Bob!!!", heroAudio)
+                setTimeout(showMessage, 12 * sec, counterSpeech, "I dont know where it is, so I should start searching if I were you.", counterAudio);
+                setTimeout(showMessage, 16 * sec, heroSpeech, "Well thank you I guess", heroAudio)
                 setTimeout(function () { counterAvatar.style.opacity = 0; }, 36 * sec);
             break;
 
